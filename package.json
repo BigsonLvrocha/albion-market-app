@@ -18,5 +18,8 @@
     "dependencies": {
         "vue": "^3.3.4",
         "vue-loader": "^17.3.0"
-    }
+    },
+    "workspaces": [
+        "packages/*"
+    ]
 }
