@@ -11,8 +11,8 @@
     },
     "devDependencies": {
         "@vitejs/plugin-vue": "^4.4.0",
-        "axios": "^1.5.1",
         "npm-check-updates": "^16.14.5",
+        "typescript": "^5.2.2",
         "vite": "^4.4.11"
     },
     "dependencies": {
