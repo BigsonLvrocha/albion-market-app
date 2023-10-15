@@ -1,0 +1,25 @@
+{
+  "name": "@albion-market-app/components",
+  "version": "1.0.0",
+  "description": "Components modules for albion market app",
+  "main": "src/index.ts",
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigsonLvrocha/albion-market-app.git"
+  },
+  "keywords": [
+    "albion",
+    "typescript",
+    "node"
+  ],
+  "author": "Luiz Victor Linhares Rocha <luizvictorlrocha@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BigsonLvrocha/albion-market-app/issues"
+  },
+  "homepage": "https://github.com/BigsonLvrocha/albion-market-app#readme"
+}
