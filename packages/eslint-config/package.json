@@ -1,6 +1,6 @@
 {
   "name": "@albion-market-app/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Eslint configuration to be used in the monorepo",
   "main": "index.js",
   "repository": {
