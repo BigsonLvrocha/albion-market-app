@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "description": "Components modules for albion market app",
   "main": "src/index.ts",
+  "type": "module",
   "devDependencies": {
     "@albion-market-app/eslint-config": "0.0.0"
   },
