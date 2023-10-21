@@ -5,10 +5,12 @@
   "main": "src/index.ts",
   "type": "module",
   "devDependencies": {
-    "@albion-market-app/eslint-config": "0.0.0"
+    "@albion-market-app/eslint-config": "0.0.0",
+    "@albion-market-app/jest-config": "0.0.0"
   },
   "scripts": {
-    "test": "test"
+    "test": "jest",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",

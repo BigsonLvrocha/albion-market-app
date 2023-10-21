@@ -1,0 +1,3 @@
+{
+  "extends": ["@albion-market-app/eslint-config"]
+}
