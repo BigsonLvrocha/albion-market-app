@@ -3,9 +3,10 @@
  * https://jestjs.io/docs/configuration
  */
 
-import type {Config} from 'jest';
 import commonConfig from '@albion-market-app/jest-config';
 
-const config: Config = commonConfig;
+const config = {
+  ...commonConfig,
+};
 
 export default config;

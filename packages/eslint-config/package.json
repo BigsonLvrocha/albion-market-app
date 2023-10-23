@@ -2,14 +2,14 @@
   "name": "@albion-market-app/eslint-config",
   "version": "0.0.0",
   "description": "Eslint configuration to be used in the monorepo",
-  "main": "index.js",
+  "main": "index.cjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BigsonLvrocha/albion-market-app.git"
   },
   "type": "commonjs",
   "scripts": {
-    "lint": "eslint --ext .ts,.tsx ."
+    "lint": "eslint"
   },
   "keywords": [
     "eslint"
