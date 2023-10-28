@@ -6,4 +6,4 @@ import { sequelizeProvider } from './sequelize';
   providers: [sequelizeProvider],
   exports: [providers.SEQUELIZE],
 })
-export class Services {}
+export class ServicesModule {}
