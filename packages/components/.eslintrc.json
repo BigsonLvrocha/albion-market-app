@@ -1,3 +1,4 @@
 {
-  "extends": ["@albion-market-app/eslint-config"]
+  "extends": ["@albion-market-app/eslint-config"],
+  "ignorePatterns": ["sequelize-cli/*"]
 }
