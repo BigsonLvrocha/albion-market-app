@@ -30,6 +30,22 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false,
       },
+      top_buy: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
+      },
+      lowest_sell: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
+      },
+      buy_weighted_avg: {
+        type: Sequelize.FLOAT,
+        allowNull: true,
+      },
+      sell_weighted_avg: {
+        type: Sequelize.FLOAT,
+        allowNull: true,
+      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,
