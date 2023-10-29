@@ -1,7 +1,7 @@
 import { type Provider } from '@nestjs/common';
 import { join } from 'path';
 import { Sequelize } from 'sequelize';
-import { providers } from './providers.enum';
+import { serviceProviders } from './service-providers.enum';
 
 const dbPath = join(
   __dirname,
@@ -15,7 +15,7 @@ const dbPath = join(
 );
 
 export const sequelizeProvider: Provider = {
-  provide: providers.SEQUELIZE,
+  provide: serviceProviders.SEQUELIZE,
   useFactory: () => {
     return new Sequelize({
       dialect: 'sqlite',

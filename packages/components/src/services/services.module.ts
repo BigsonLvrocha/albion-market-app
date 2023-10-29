@@ -1,9 +1,9 @@
 import { Module } from '@nestjs/common';
-import { providers } from './providers.enum';
 import { sequelizeProvider } from './sequelize';
+import { serviceProviders } from './service-providers.enum';
 
 @Module({
   providers: [sequelizeProvider],
-  exports: [providers.SEQUELIZE],
+  exports: [serviceProviders.SEQUELIZE],
 })
 export class ServicesModule {}

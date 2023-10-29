@@ -1,3 +1,3 @@
-export const providers = {
+export const serviceProviders = {
   SEQUELIZE: Symbol('SEQUELIZE'),
 };
