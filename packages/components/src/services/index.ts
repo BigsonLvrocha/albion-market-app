@@ -1,3 +1,3 @@
-export { serviceProviders as providers } from './service-providers.enum';
+export { serviceProviders } from './service-providers.enum';
 export { ServicesModule } from './services.module';
 //
