@@ -11,7 +11,7 @@
     "sequelize-cli": "^6.6.1"
   },
   "scripts": {
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --silent=false",
     "lint": "eslint --ext .ts,.tsx ."
   },
   "repository": {
