@@ -1,4 +1,4 @@
-export const enum Cities {
+export enum Cities {
   Bridgewatch = 'Bridgewatch',
   Caerleon = 'Caerleon',
   FortSterling = 'Fort Sterling',
