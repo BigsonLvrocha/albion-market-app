@@ -10,6 +10,14 @@ module.exports = {
         type: Sequelize.INTEGER,
         autoIncrement: true,
       },
+      itemId: {
+        allowNull: false,
+        type: Sequelize.INTEGER,
+        references: {
+          model: 'items',
+          key: 'id',
+        },
+      },
       city: {
         type: Sequelize.ENUM(
           'BRIDGEWATCH',
@@ -23,11 +31,11 @@ module.exports = {
         allowNull: false,
       },
       buy_entries: {
-        type: Sequelize.TEXT,
+        type: Sequelize.JSON,
         allowNull: false,
       },
       sell_entries: {
-        type: Sequelize.TEXT,
+        type: Sequelize.JSON,
         allowNull: false,
       },
       top_buy: {
