@@ -5,6 +5,7 @@ export async function beforeEach(): Promise<void> {
   const app = await NestFactory.createApplicationContext(ServicesModule);
   const sequelize = app.get(serviceProviders.SEQUELIZE);
   await sequelize.query(`
+    delete from market_reports;
     delete from items;
   `);
   await app.close();
