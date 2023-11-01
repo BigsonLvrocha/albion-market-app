@@ -18,10 +18,10 @@ export class MarketReportModel extends Model<
   declare city: Cities;
   declare buyEntries: MarketEntry[];
   declare sellEntries: MarketEntry[];
-  declare topBuy: number;
-  declare lowestSell: number;
-  declare buyWeightedAverage: number;
-  declare sellWeightedAverage: number;
+  declare topBuy?: number | null;
+  declare lowestSell?: number | null;
+  declare buyWeightedAvg?: number | null;
+  declare sellWeightedAvg?: number | null;
   declare createdAt: CreationOptional<Date>;
   declare updatedAt: CreationOptional<Date>;
 }
@@ -57,20 +57,20 @@ export function initMarketReportModel(
         type: DataTypes.JSONB,
       },
       topBuy: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.INTEGER,
       },
       lowestSell: {
-        allowNull: false,
+        allowNull: true,
         type: DataTypes.INTEGER,
       },
-      buyWeightedAverage: {
-        allowNull: false,
+      buyWeightedAvg: {
         type: DataTypes.FLOAT,
+        allowNull: true,
       },
-      sellWeightedAverage: {
-        allowNull: false,
+      sellWeightedAvg: {
         type: DataTypes.FLOAT,
+        allowNull: true,
       },
       createdAt: {
         allowNull: false,

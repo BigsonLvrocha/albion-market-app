@@ -30,8 +30,8 @@ describe('market-report', () => {
     });
 
     it('calculates the top price', () => {
-      expect(marketReport.topBuyOrder).toEqual(2);
-      expect(marketReport.lowestSellOrder).toEqual(4);
+      expect(marketReport.topBuy).toEqual(2);
+      expect(marketReport.lowestSell).toEqual(4);
     });
 
     it('calculates the weighted average', () => {
@@ -49,8 +49,8 @@ describe('market-report', () => {
     });
 
     it('leaves the top price as null', () => {
-      expect(marketReport.topBuyOrder).toEqual(null);
-      expect(marketReport.lowestSellOrder).toEqual(null);
+      expect(marketReport.topBuy).toEqual(null);
+      expect(marketReport.lowestSell).toEqual(null);
     });
 
     it('leaves the weighted average as null', () => {

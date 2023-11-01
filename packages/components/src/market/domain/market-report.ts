@@ -21,10 +21,10 @@ export class MarketReport {
   public readonly itemId: number;
   public readonly buyEntries: MarketEntry[];
   public readonly sellEntries: MarketEntry[];
-  public readonly buyWeightedAvg: number | null;
-  public readonly sellWeightedAvg: number | null;
-  public readonly topBuyOrder?: number | null;
-  public readonly lowestSellOrder?: number | null;
+  public readonly buyWeightedAvg?: number | null;
+  public readonly sellWeightedAvg?: number | null;
+  public readonly topBuy?: number | null;
+  public readonly lowestSell?: number | null;
   public readonly createdAt?: Date;
   public readonly updatedAt?: Date;
 
@@ -44,10 +44,10 @@ export class MarketReport {
       props.sellWeigthedAvg ??
       MarketReport.calculateWeightedAverage(props.sellEntries);
 
-    this.topBuyOrder =
+    this.topBuy =
       props.topBuyOrder ?? MarketReport.calculateTopOrder(props.buyEntries);
 
-    this.lowestSellOrder =
+    this.lowestSell =
       props.lowestSellOrder ??
       MarketReport.calculateLowestOrder(props.sellEntries);
 
