@@ -10,10 +10,14 @@
       "name": "Test components",
       "skipFiles": ["<node_internals>/**"],
       "runtimeArgs": ["--inspect-brk", "--experimental-vm-modules"],
+      "args": ["--runInBand", "--no-cache", "--timeout=1000000", "--verbose", "--silent", "false"],
       "runtimeVersion": "18.18.0",
       "cwd": "${workspaceFolder}/packages/components",
       "program": "${workspaceFolder}/node_modules/.bin/jest",
       "console": "integratedTerminal",
+      "env": {
+        "DEBUG": "jest"
+      }
     }
   ]
 }
