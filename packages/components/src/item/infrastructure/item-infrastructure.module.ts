@@ -11,5 +11,6 @@ import { SequelizeItemRepository } from './sequelize-item-repository';
       useClass: SequelizeItemRepository,
     },
   ],
+  exports: [itemProviders.ItemRepository],
 })
 export class ItemInfrastructureModule {}
