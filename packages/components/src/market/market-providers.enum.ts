@@ -1,0 +1,4 @@
+export const marketProvidersEnum = {
+  MARKET_REPORT_REPOSITORY: Symbol('MARKET_REPORT_REPOSITORY'),
+  MARKET_REPORT_MODEL: Symbol('MARKET_REPORT_MODEL'),
+};
